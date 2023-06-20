@@ -1,0 +1,120 @@
+@import url(../import.css);
+ 
+/* ----- NAVBAR ----- */
+nav{
+    height: var(--height-header);
+    /* border-bottom: 2px solid var(--branco); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-center{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 80%;
+}
+.box-logo{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.box-logo img{
+    padding-left: 30px;
+}
+.box-links{
+    width: 80%;
+    display: flex;
+    
+}
+
+.menu{
+    width: 100%;
+    list-style:none;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+}
+.menu li{
+    position:relative;
+    float:left;
+    /* padding: 15px 20px; */
+}
+
+.menu li a{ 
+    color:var(--branco);
+    text-decoration:none; 
+    padding:15px 20px;      
+    /* display:block; */
+    margin: 0 30px;
+}
+
+.menu li a:hover{
+    color: var(--roxo);
+    border-bottom: 1px solid var(--branco);
+}
+
+.menu li ul{
+    display: none;
+    height: 100%;
+    padding: 5px 0 10px 0;
+    flex-direction: column;
+    background-color: var(--fundo);
+    margin-top: 180px;
+    border: .5px solid var(--branco);
+}
+.menu li ul li{
+    text-align: center;
+    padding: 10px 40px;
+    display:block;
+}
+
+.dropdown-link:hover .dropdown-opitions{
+    display: flex;
+}
+.responsive-menu{
+    display: none;
+}
+
+@media (max-width: 860px){
+    
+    .menu{
+        justify-content: space-around;
+    }
+    .box-links{
+        width: 60%;
+    }
+    .box-logo{
+        width: 40%;
+    }
+    .box-logo img{
+        margin-left: 5%;
+    }
+    .menu li a{ 
+        padding:7px 10px;    
+    }
+}
+@media (max-width: 510px){
+    
+    #banner {
+        display: none;
+    }
+    .box-logo img{
+        margin: 0;
+    }
+    nav{
+        flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .box-links{
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .box-logo{
+        padding: 12px;
+       
+    }
+} 

@@ -1,0 +1,24 @@
+@import url(../import.css);
+
+.container{
+    padding: 0 40px 50px 40px;
+
+}
+
+.titulo{
+    /* margin-bottom: 2px solid var(--brano); */
+    border-bottom: 2px solid var(--branco);
+}
+
+.subtitulo {
+    color: var(--roxo);
+    font-family: var(--opensans) !important;
+}
+
+.carga-horaria {
+    /* padding-left: 50px; */
+    text-align: end;
+    font-size: 20px;
+    font-weight: 700;
+    /* padding-bottom: 20px; */
+}

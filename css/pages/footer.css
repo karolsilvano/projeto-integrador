@@ -1,0 +1,77 @@
+@import url(../import.css);
+
+/* ----- FOOTER ----- */
+
+footer{
+    padding-top: 300px;
+    top: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-top{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+footer .box-missao{
+    padding: 30px;
+    width: 50%;
+}
+footer .box-contato{
+    padding: 30px;
+    width: 50%;
+}
+
+footer h2{
+    /* font-family: var(--opensans); */
+    text-transform: uppercase;
+    font-size: 30px;
+}
+footer p{
+    margin-top: 3px;
+    font-size: 25px;
+}
+#footer-bottom{
+    width: 80%;
+    border-top: 1px solid var(--branco);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* background-color: yellowgreen; */
+}
+
+#footer-bottom img{
+    padding-left: 30px;
+
+}
+
+
+@media (max-width: 860px){
+    
+    #footer-top{
+        flex-direction: column;
+        /* text-align: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    footer .box-missao{
+        width: 100%;
+    }
+    footer .box-contato{
+        width: 100%;
+    }
+    #footer-bottom{
+        align-items: center;
+        justify-content: center;
+        /* background-color: yellowgreen; */
+    }
+    
+    #footer-bottom img{
+        padding: 0;
+    
+    }
+} 

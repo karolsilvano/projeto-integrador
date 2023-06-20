@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: var(--fundo);
+    color: var(--branco);
+}
+
+
+/* Variaveis */
+
+:root {
+    --fundo: #1A1818;
+    --roxo: #AA20FF;
+    --branco: #FAFAFA;
+    --preto: #000;
+    --height-header: 100px;
+    --opensans: 'Open Sans', sans-serif;
+}
+
+/* Estilo de fontes nos titulos e textos */
+
+h1 {
+    font-family: var(--opensans);
+    font-weight: 400;
+    /* font-size: 2.5rem; */
+}
+
+h2 {
+    font-family: var(--opensans);
+    /* font-size: 1.9rem; */
+}
+
+h3 {
+    font-family: var(--opensans);
+    /* font-size: 1.75rem; */
+}
+
+h4,
+p,
+a,
+span,
+li {
+    font-family: var(--opensans);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+h5,
+input,
+textarea,
+button,
+select,
+option,
+label {
+    font-family: var(--opensans);
+    /* font-size: 1rem; */
+    outline: none;
+}
+
+h6 {
+    font-family: var(--opensans);
+    /* font-size: 0.75rem; */
+}
+
+th {
+    font-family: var(--opensans);
+}
+
+td {
+    font-family: var(--opensans);
+}
+
+/* Resets de links e listas */
+
+a {
+    text-decoration: none;
+    padding: .5px;
+}
+ 
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+}

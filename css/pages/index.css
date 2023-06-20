@@ -1,0 +1,136 @@
+@import url(../import.css);
+
+
+
+
+
+
+/* ----- CONTEÚDO ----- */
+.requisitos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.requisitos h1{
+    font-family: var(--opensans) !important;
+    font-weight: 615;
+    font-size: 33pt;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.requisitos p{
+    font-family: var(--opensans) !important;
+    font-weight: 10;
+    margin: 40px;
+    width: 70%;
+    font-size: 18pt;
+  }
+  
+  /* ----- TABELA ----- */
+  .box-tabela{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .tabela{
+  margin: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.box-tabela h2{
+    font-family: var(--opensans) !important;
+    font-weight: 615;
+    font-size: 33pt;
+    margin-left: 40px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+    background-color: black;
+    
+    
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    color: white;
+  }
+  
+  th {
+    background-color: #AA20FF;
+  }
+  
+  /* 'nth-child(even)' e 'nth-child(odd)' serve para ir alternando a cor da linha de acordo com a criação da próxima linha */
+  tr:nth-child(even) {
+    background-color: #222;
+
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #111;
+  }
+
+
+
+
+/* ----- INTEGRANTES ----- */
+.box-integrantes{
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.box-integrantes h2{
+  font-family: var(--opensans) !important;
+    font-weight: 615;
+    font-size: 33pt;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.box-integrantes img{
+  margin: 40px;
+}
+
+.box-integrantes p{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 860px){
+    table{
+      width: 30%;
+    }
+}
+@media (max-width: 580px){
+  .box-tabela{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  table{
+    /* margin: 0 0 0 300px; */
+    width: 200px;
+  }
+  th, td {
+    padding: 0;
+    text-align: left;
+  }
+}

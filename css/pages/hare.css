@@ -1,0 +1,120 @@
+@import url(../import.css);
+
+.infos-materia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.infos-materia h2{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+.infos-hare{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infos-hare span{ 
+    font-weight: bold;
+    font-size: 29px;
+}
+
+.infos-hare p{ 
+    width: 25%;
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+/* ----- CONTEÚDO ----- */
+.infos-detalhes{
+    margin-top: 50px;
+}
+.infos-detalhes h2{
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 47px;
+    
+}
+.conteudo{
+    width: 100%;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.conteudo h3{
+    font-size: 25px;
+    color: var(--roxo);
+    width: 90%;
+    border-bottom: var(--branco) 1px solid;
+    text-transform: uppercase;
+}
+
+.conteudo p{
+    text-align: left;
+    font-size: 20px;
+    padding-top: 12px;
+}
+
+.conteudo-hardware{
+    width: 30%;
+    border: 0.5px solid var(--branco);
+    padding: 30px;
+    margin: 5px;
+}
+.conteudo-redes{
+    margin: 5px;
+    padding: 30px;
+    border: 0.5px solid var(--branco);
+    width: 30%;
+}
+
+/* ATIVIDADES REALIZADAS */
+.atividades h2{
+    text-align: left;
+    padding: 50px 200px;
+    font-size: 47px;
+    
+    
+    /* padding: 20px 40px 20px 40px; */
+    /* text-align: center  ; */
+}
+
+.atividade-realizada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.atividade-realizada p{
+    width: 60%;
+    padding: 10px 30px;
+    /* border: 2px solid var(--branco); */
+    border: 0.5px solid var(--branco);
+}
+
+@media (max-width: 800px){
+    .conteudo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo-hardware, .conteudo-redes{
+        width: 70%;
+    }
+    .infos-detalhes h2{
+        width: 100%;
+    }
+    .infos-hare{
+        flex-direction: column;
+        margin-left: 100px;
+    }
+    .infos-hare p{
+        width: 90%;
+    }
+}
+
+
